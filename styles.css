@@ -26,6 +26,13 @@
 
 .evenCell {
   background-color: #DC7633;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100px;
   height: 100px;
+}
+img{
+  width: 75px;
+  height: 75px;
 }
