@@ -2,6 +2,10 @@
   box-sizing: border-box;
 }
 
+body {
+  display: flex;
+}
+
 .board {
   border-style: solid;
   display: flex;
@@ -12,25 +16,19 @@
 .row {
   display: flex;
 }
-.row2 {
-  display: flex;
-  flex-direction: row-reverse;
-  justify-content: flex-end;
-}
 
-.oddCell {
-  background-color: #F6DDCC;
-  width: 100px;
-  height: 100px;
-}
-
-.evenCell {
-  background-color: #DC7633;
+.cell {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 100px;
   height: 100px;
+}
+
+.checkers {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 img{
   position: relative;
@@ -49,4 +47,21 @@ img{
 #crown-R1{
   display: inline-block;
 
+}
+
+section {
+  background-color: #F6DDCC;
+  border-style: solid;
+  height: 500px;
+  margin-left: 5px;
+  width: 500px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.player {
+  background-color: red;
+  width: 200px;
 }
