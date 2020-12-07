@@ -85,3 +85,47 @@ const bC9 = document.getElementById("Black-9");
 const bC10 = document.getElementById("Black-10");
 const bC11 = document.getElementById("Black-11");
 const bC12 = document.getElementById("Black-12");
+
+
+let checkerboard = {
+  occupC1 : [true, rC1],
+  occupC3 : [true, rC2],
+  occupC5 : [true, rC3],
+  occupC7 : [true, rC4],
+
+  occupC8 : [true, rC5],
+  occupC10 : [true, rC6],
+  occupC12 : [true, rC7],
+  occupC14 : [true, rC8],
+
+  occupC17 : [true, rC9],
+  occupC19 : [true, rC10],
+  occupC21 : [true, rC11],
+  occupC23 : [true, rC12],
+
+  occupC24 : [false, null],
+  occupC26 : [false, null],
+  occupC28 : [false, null],
+  occupC30 : [false, null],
+
+  occupC33 : [false, null],
+  occupC35 : [false, null],
+  occupC37 : [false, null],
+  occupC39 : [false, null],
+
+  occupC40 : [true, bC12],
+  occupC42 : [true, bC11],
+  occupC44 : [true, bC10],
+  occupC46 : [true, bC9],
+
+  occupC49 : [true, bC8],
+  occupC51 : [true, bC7],
+  occupC53 : [true, bC6],
+  occupC55 : [true, bC5],
+
+  occupC56 : [true, bC4],
+  occupC58 : [true, bC3],
+  occupC60 : [true, bC2],
+  occupC62 : [true, bC1]
+
+}
