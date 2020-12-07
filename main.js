@@ -135,3 +135,11 @@ bC10.addEventListener("click", function() {
     });
   }
 });
+
+bC10.addEventListener("click", function() {
+  if(occupC35[1]===false){
+    cell35.addEventListener("click", function() {
+      cell35.append(bC10);
+    });
+  }
+});
