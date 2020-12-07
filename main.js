@@ -86,60 +86,54 @@ const bC10 = document.getElementById("Black-10");
 const bC11 = document.getElementById("Black-11");
 const bC12 = document.getElementById("Black-12");
 
+let row1, row2, row3, row4, row5, row6, row7, row8;
 
+let occupC1 = [cell1, rC1, row1];
+let occupC3 = [cell3, rC2, row1];
+let occupC5 = [cell5, rC3, row1];
+let occupC7 = [cell7, rC4, row1];
 
-let occupC1 = [cell1, true, rC1];
-let occupC3 = [cell3, true, rC2];
-let occupC5 = [cell5, true, rC3];
-let occupC7 = [cell7, true, rC4];
+let occupC8 = [cell8, rC5, row2];
+let occupC10 = [cell10, rC6, row2];
+let occupC12 = [cell12, rC7, row2];
+let occupC14 = [cell14, rC8, row2];
 
-let occupC8 = [cell8, true, rC5];
-let occupC10 = [cell10, true, rC6];
-let occupC12 = [cell12, true, rC7];
-let occupC14 = [cell14, true, rC8];
+let occupC17 = [cell17, rC9, row3];
+let occupC19 = [cell19, rC10, row3];
+let occupC21 = [cell21, rC11, row3];
+let occupC23 = [cell23, rC12, row3];
 
-let occupC17 = [cell17, true, rC9];
-let occupC19 = [cell19, true, rC10];
-let occupC21 = [cell21, true, rC11];
-let occupC23 = [cell23, true, rC12];
+let occupC24 = [cell24, null, row4];
+let occupC26 = [cell26, null, row4];
+let occupC28 = [cell28, null, row4];
+let occupC30 = [cell30, null, row4];
 
-let occupC24 = [cell24, false, null];
-let occupC26 = [cell26, false, null];
-let occupC28 = [cell28, false, null];
-let occupC30 = [cell30, false, null];
+let occupC33 = [cell33, null, row5];
+let occupC35 = [cell35, null, row5];
+let occupC37 = [cell37, null, row5];
+let occupC39 = [cell39, null, row5];
 
-let occupC33 = [cell33, false, null];
-let occupC35 = [cell35, false, null];
-let occupC37 = [cell37, false, null];
-let occupC39 = [cell39, false, null];
+let occupC40 = [cell40, bC12, row6];
+let occupC42 = [cell42, bC11, row6];
+let occupC44 = [cell44, bC10, row6];
+let occupC46 = [cell46, bC9, row6];
 
-let occupC40 = [cell40, true, bC12];
-let occupC42 = [cell42, true, bC11];
-let occupC44 = [cell44, true, bC10];
-let occupC46 = [cell46, true, bC9];
+let occupC49 = [cell49, bC8, row7];
+let occupC51 = [cell51, bC7, row7];
+let occupC53 = [cell53, bC6, row7];
+let occupC55 = [cell55, bC5, row7];
 
-let occupC49 = [cell49, true, bC8];
-let occupC51 = [cell51, true, bC7];
-let occupC53 = [cell53, true, bC6];
-let occupC55 = [cell55, true, bC5];
-
-let occupC56 = [cell56, true, bC4];
-let occupC58 = [cell58, true, bC3];
-let occupC60 = [cell60, true, bC2];
-let occupC62 = [cell62, true, bC1];
+let occupC56 = [cell56, bC4, row8];
+let occupC58 = [cell58, bC3, row8];
+let occupC60 = [cell60, bC2, row8];
+let occupC62 = [cell62, bC1, row8];
 
 bC10.addEventListener("click", function() {
-  if(occupC37[1]===false){
+  if(occupC37[1] === null){
     cell37.addEventListener("click", function() {
       cell37.append(bC10);
-    });
-  }
-});
-
-bC10.addEventListener("click", function() {
-  if(occupC35[1]===false){
-    cell35.addEventListener("click", function() {
-      cell35.append(bC10);
+      occupC37[1]= bC10;
+      occupC44[1]= null;
     });
   }
 });
