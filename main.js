@@ -87,45 +87,43 @@ const bC11 = document.getElementById("Black-11");
 const bC12 = document.getElementById("Black-12");
 
 
-let checkerboard = {
-  occupC1 : [true, rC1],
-  occupC3 : [true, rC2],
-  occupC5 : [true, rC3],
-  occupC7 : [true, rC4],
 
-  occupC8 : [true, rC5],
-  occupC10 : [true, rC6],
-  occupC12 : [true, rC7],
-  occupC14 : [true, rC8],
+let occupC1 = [cell1, true, rC1];
+let occupC3 = [cell3, true, rC2];
+let occupC5 = [cell5, true, rC3];
+let occupC7 = [cell7, true, rC4];
 
-  occupC17 : [true, rC9],
-  occupC19 : [true, rC10],
-  occupC21 : [true, rC11],
-  occupC23 : [true, rC12],
+let occupC8 = [cell8, true, rC5];
+let occupC10 = [cell10, true, rC6];
+let occupC12 = [cell12, true, rC7];
+let occupC14 = [cell14, true, rC8];
 
-  occupC24 : [false, null],
-  occupC26 : [false, null],
-  occupC28 : [false, null],
-  occupC30 : [false, null],
+let occupC17 = [cell17, true, rC9];
+let occupC19 = [cell19, true, rC10];
+let occupC21 = [cell21, true, rC11];
+let occupC23 = [cell23, true, rC12];
 
-  occupC33 : [false, null],
-  occupC35 : [false, null],
-  occupC37 : [false, null],
-  occupC39 : [false, null],
+let occupC24 = [cell24, false, null];
+let occupC26 = [cell26, false, null];
+let occupC28 = [cell28, false, null];
+let occupC30 = [cell30, false, null];
 
-  occupC40 : [true, bC12],
-  occupC42 : [true, bC11],
-  occupC44 : [true, bC10],
-  occupC46 : [true, bC9],
+let occupC33 = [cell33, false, null];
+let occupC35 = [cell35, false, null];
+let occupC37 = [cell37, false, null];
+let occupC39 = [cell39, false, null];
 
-  occupC49 : [true, bC8],
-  occupC51 : [true, bC7],
-  occupC53 : [true, bC6],
-  occupC55 : [true, bC5],
+let occupC40 = [cell40, true, bC12];
+let occupC42 = [cell42, true, bC11];
+let occupC44 = [cell44, true, bC10];
+let occupC46 = [cell46, true, bC9];
 
-  occupC56 : [true, bC4],
-  occupC58 : [true, bC3],
-  occupC60 : [true, bC2],
-  occupC62 : [true, bC1]
+let occupC49 = [cell49, true, bC8];
+let occupC51 = [cell51, true, bC7];
+let occupC53 = [cell53, true, bC6];
+let occupC55 = [cell55, true, bC5];
 
-}
+let occupC56 = [cell56, true, bC4];
+let occupC58 = [cell58, true, bC3];
+let occupC60 = [cell60, true, bC2];
+let occupC62 = [cell62, true, bC1];
