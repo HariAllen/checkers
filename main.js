@@ -127,3 +127,11 @@ let occupC56 = [cell56, true, bC4];
 let occupC58 = [cell58, true, bC3];
 let occupC60 = [cell60, true, bC2];
 let occupC62 = [cell62, true, bC1];
+
+bC10.addEventListener("click", function() {
+  if(occupC37[1]===false){
+    cell37.addEventListener("click", function() {
+      cell37.append(bC10);
+    });
+  }
+});
